@@ -15,14 +15,14 @@ b = gets.to_f
 print "Введите коэффициент c:"
 c = gets.to_f
 
-D = b**2 - 4*a*c
+D = b**2 - 4 * a * c
 puts "Дискриминант равен #{D}."
 
 if D > 0
-    puts "Корень 1 = #{(-b + Math.sqrt(D)) / (2*a)}"
-    puts "Корень 2 = #{(-b - Math.sqrt(D)) / (2*a)}"
+  puts "Корень 1 = #{(- b + Math.sqrt(D))/(2 * a)}"
+  puts "Корень 2 = #{(- b - Math.sqrt(D))/(2 * a)}"
 elsif D == 0
-    puts "Оба корня равны #{-(b/2*a)}"
+  puts "Оба корня равны #{-(b/2 * a)}"
 elsif D < 0
-    puts "Корней нет."
+  puts "Корней нет."
 end

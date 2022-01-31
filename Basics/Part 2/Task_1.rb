@@ -8,12 +8,12 @@ print "Введите ваше имя:"
 user_name = gets.chomp
 
 print "Введите ваш рост в см:"
-user_height = gets.chomp
+user_height = gets.chomp.to_f
 
-perfect_weight = (user_height.to_f - 110)*1.15
+perfect_weight = (user_height - 110)* 1.15
 
 if perfect_weight < 0
-    puts "Уважаемый #{user_name}, ваш вес уже оптимальный."
+  puts "Уважаемый #{user_name}, ваш вес уже оптимальный."
 else
-    puts "Уважаемый #{user_name}, ваш оптимальный вес - #{perfect_weight}"
+  puts "Уважаемый #{user_name}, ваш оптимальный вес - #{perfect_weight}"
 end

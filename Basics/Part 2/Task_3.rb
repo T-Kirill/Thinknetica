@@ -17,14 +17,14 @@ print "Введите сторону c:"
 c = gets.to_f
 
 triangle_sides = [a,b,c]
-triangle_sides.sort
+triangle_sides.sort!
 
 preamble = "Экспертиза установила: ваш треугольник - "
 
 if a.eql?(b) && a.eql?(c)
-    puts preamble + "равносторонний!"
+  puts preamble + "равносторонний!"
 elsif (a == b) || (a == c) || (b == c)
-    puts preamble + "равнобедренный!"
+  puts preamble + "равнобедренный!"
 elsif triangle_sides.last**2 == triangle_sides[0]**2 + triangle_sides[1]**2
-    puts preamble + "прямоугольный!"
+  puts preamble + "прямоугольный!"
 end
