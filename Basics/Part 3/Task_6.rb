@@ -8,12 +8,11 @@
 # Вычислить и вывести на экран итоговую сумму всех покупок в "корзине".
 
 total = 0.0
-purchases = Hash.new
+purchases = {}
 
 puts "Начнем покупки."
 
 loop do
-
   puts "Введите название товара:"
   product = gets.chomp
 
@@ -28,7 +27,6 @@ loop do
   product_quantity = gets.chomp.to_f
 
   purchases[product] = {price: product_price, quantity: product_quantity}
-
 end
 
 puts "Ваши покупки:"
@@ -38,6 +36,5 @@ purchases.each do |product, product_data|
   total += sub_total
 end
 
-puts "Итого: #{total}"
- 
+puts "Итого: #{total}" 
 puts "До свидания! Ждем вас снова!"

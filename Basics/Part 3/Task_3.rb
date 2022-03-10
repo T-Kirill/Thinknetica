@@ -7,9 +7,7 @@ a = 0
 b = 1
 
 while a <= 100 do
-
   fibonacci_sequence.push(a + b)
   a = b 
-  b = fibonacci_sequence.last
-  
+  b = fibonacci_sequence.last  
 end
